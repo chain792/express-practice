@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form action="/users/add" method="post">
+    名前
+    <input type="text" name="name" value="<%= form.name %>">
+    パスワード
+    <input type="password" name="pass"><br>
+    メール
+    <input type="text" name="mail" value="<%= form.mail %>">
+    年齢
+    <input type="number" name="age" id="" value="<%= form.age %>"><br>
+    <input type="submit" value="作成">
+  </form>
+  
+</body>
+</html>

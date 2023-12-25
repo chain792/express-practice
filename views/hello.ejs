@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p><%- content %></p>
+    <div>
+      <form method="post" action="/hello/post">
+        <label for="msg">Message</label>
+        <input type="text" name="message" id="msg">
+        <input type="submit" value="送信">
+      </form>
+    </div>
+  </body>
+</html>
